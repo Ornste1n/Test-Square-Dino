@@ -8,7 +8,7 @@ namespace Game.Scripts.Player.Movement
         public float RotationSpeed { get; }
         
         public CharacterController Character { get; }
-        public Transform Transform { get; }
+        public Transform BodyTransform { get; }
         public Animator Animator { get; }
     }
 }

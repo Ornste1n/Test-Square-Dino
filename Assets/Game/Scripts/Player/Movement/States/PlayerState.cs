@@ -6,8 +6,6 @@ namespace Game.Scripts.Player.Movement.States
 {
     public class PlayerState : FsmState<PlayerState>
     {
-        protected const string RunningKey = "Running";
-        
         public Vector3 ClientInput { get; set; }
         protected IPlayerController Controller { get; }
 

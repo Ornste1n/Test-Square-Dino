@@ -10,6 +10,7 @@ namespace Game.Scripts.Player.Movement
         [SerializeField] private PlayerInputReader _inputReader;
         [SerializeField] private CharacterController _characterController;
         [SerializeField] private Animator _animator;
+        [SerializeField] private Transform _bodyTransform;
 
         [Header("Configuration")] 
         [SerializeField] private float _moveSpeed;
@@ -22,7 +23,7 @@ namespace Game.Scripts.Player.Movement
         public float MoveSpeed => _moveSpeed;
         public float RotationSpeed => _rotationSpeed;
         public Animator Animator => _animator;
-        public Transform Transform => transform;
+        public Transform BodyTransform => _bodyTransform;
         public CharacterController Character => _characterController;
         #endregion
 
